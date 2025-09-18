@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Welcome to Guestbook 👋</h1>
+  <p>Go to <a href="{{ url_for('sign') }}">Sign</a> to add your name, or view all names on <a href="{{ url_for('guestbook') }}">Guestbook</a>.</p>
+{% endblock %}

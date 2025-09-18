@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Sign the Guestbook</h2>
+  <form method="post">
+    <label for="name">Your name:</label>
+    <input id="name" name="name" required>
+    <button type="submit">Submit</button>
+  </form>
+{% endblock %}

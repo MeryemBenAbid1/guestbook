@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Guestbook</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 24px; }
+      nav { margin-bottom: 12px; }
+      nav a, nav form button { margin-right: 10px; }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('sign') }}">Sign</a>
+      <a href="{{ url_for('guestbook') }}">Guestbook</a>
+      <a href="{{ url_for('clear') }}">Clear</a>
+
+      <!-- We'll wire Clear later -->
+    </nav>
+    <hr>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>
