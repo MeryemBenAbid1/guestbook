@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, session, redirect, url_for
 from datetime import datetime
 
 app = Flask(__name__)
-app.secret_key = "dev-secret"   # dev use only; professor expects session usage
+app.secret_key = "dev-secret"   
 
 @app.route("/")
 def home():
@@ -22,7 +22,7 @@ def sign():
 
 @app.route("/guestbook")
 def guestbook():
-    # Using session inside the template (prof's snippet uses session.guestbook)
+   
     return render_template("guestbook.html")
 
 @app.route("/clear")
